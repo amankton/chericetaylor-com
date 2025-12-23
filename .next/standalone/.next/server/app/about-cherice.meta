@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/about-cherice/layout,_N_T_/about-cherice/page,_N_T_/about-cherice"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/about-cherice/__PAGE__",
+    "/about-cherice",
+    "/_index",
+    "/_head"
+  ]
+}

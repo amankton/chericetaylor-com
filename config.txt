@@ -1,0 +1,10 @@
+{
+  "projectId": "chericetaylor-cms",
+  "appId": "1:689603488392:web:5617589c1f595ff72c8d3d",
+  "storageBucket": "chericetaylor-cms.firebasestorage.app",
+  "apiKey": "AIzaSyDkNw1TrU4UBxfU70Eq-Ekx3GB-nDbPbJI",
+  "authDomain": "chericetaylor-cms.firebaseapp.com",
+  "messagingSenderId": "689603488392",
+  "projectNumber": "689603488392",
+  "version": "2"
+}

@@ -1,0 +1,37 @@
+
+> chericetaylor-com@0.1.0 build
+> next build
+
+   ▲ Next.js 16.0.10 (Turbopack)
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./app/blog/[slug]/page.jsx:5:1
+Module not found: Can't resolve 'date-fns'
+[0m [90m 3 |[39m [36mimport[39m [33mReact[39m[33m,[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { [33mLayout[39m } [36mfrom[39m [32m"../../../components/Layout"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { format } [36mfrom[39m [32m"date-fns"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../../../lib/firebase"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { collection[33m,[39m query[33m,[39m where[33m,[39m getDocs } [36mfrom[39m [32m"firebase/firestore"[39m[33m;[39m
+ [90m 8 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/blog/[slug]/page.jsx [Client Component Browser]
+    ./app/blog/[slug]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/blog/[slug]/page.jsx [Client Component SSR]
+    ./app/blog/[slug]/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./app/blog/[slug]/page.jsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
