@@ -1,9 +1,0 @@
-[00:00:02.886] Server  LOG      ✓ Ready in 2.4s
-[00:00:12.371] Server  LOG      ○ Compiling / ...
-[00:00:15.252] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:15.528] Browser WARN    Image with src "/_next/static/media/1.24ce9547.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:21.274] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:00:42.654] Server  LOG      ✓ Compiled in 259ms
-[00:01:03.279] Browser WARN    Image with src "/_next/static/media/Cherice About.8f2748df.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:23.936] Server  LOG      ✓ Compiled in 612ms
-[00:01:45.481] Server  LOG      ✓ Compiled in 184ms
