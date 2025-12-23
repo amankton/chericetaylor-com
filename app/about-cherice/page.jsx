@@ -29,7 +29,7 @@ export default function Page() {
                 <span className="text-xs font-medium text-stone-600 uppercase tracking-widest">About Me</span>
               </div>
               <h1 className="font-serif text-4xl md:text-5xl text-stone-900 tracking-tight leading-tight">
-                Cherice Taylor, M.A.
+                Cherice Taylor, M.A. Ed
               </h1>
               <p className="text-xl text-stone-600 font-light leading-relaxed">
                 Educator • Podcast Host • Career Advisor • Mentor
