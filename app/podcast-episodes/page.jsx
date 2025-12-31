@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Layout } from "../../components/Layout";
 import { Play, Clock, Calendar, Mic, Search, Headphones, Video, Music, ExternalLink, X } from "lucide-react";
 import { db } from "../../lib/firebase";
-import { collection, getDocs, query, orderBy } from "firebase/firestore";
+import { collection, getDocs, query, orderBy, doc, updateDoc, arrayUnion } from "firebase/firestore";
 
 
 // YouTube Embed Component
@@ -66,7 +66,10 @@ function EpisodeCard({ episode, onPlay }) {
         <div className="flex items-center gap-2 mb-3 flex-wrap">
           <span className="text-xs font-medium text-stone-500">EP {episode.episodeNumber}</span>
           <span className="w-1 h-1 rounded-full bg-stone-300"></span>
-          <span className="text-xs text-stone-500">{episode.category}</span>
+          <span className="w-1 h-1 rounded-full bg-stone-300"></span>
+          <span className="text-xs text-stone-500 capitalize">
+            {episode.tags && episode.tags.length > 0 ? episode.tags.join(", ") : episode.category}
+          </span>
           {episode.featured && (
             <>
               <span className="w-1 h-1 rounded-full bg-stone-300"></span>
@@ -102,23 +105,25 @@ export default function Page() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchEpisodes = async () => {
+    async function fetchEpisodes() {
       try {
         const q = query(collection(db, "podcasts"), orderBy("episodeNumber", "desc"));
         const querySnapshot = await getDocs(q);
-        const fetchedEpisodes = querySnapshot.docs.map(doc => ({
+
+        const episodesData = querySnapshot.docs.map(doc => ({
           id: doc.id,
           ...doc.data(),
           // Convert Timestamp to Date if necessary
           publishDate: doc.data().publishedAt ? doc.data().publishedAt.toDate() : new Date(),
         }));
-        setEpisodes(fetchedEpisodes);
+
+        setEpisodes(episodesData);
       } catch (error) {
-        console.error("Error fetching episodes:", error);
+        console.error("Error fetching podcasts:", error);
       } finally {
         setLoading(false);
       }
-    };
+    }
 
     fetchEpisodes();
   }, []);
@@ -129,7 +134,13 @@ export default function Page() {
     const matchesSearch = episode.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       episode.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (episode.guestName && episode.guestName.toLowerCase().includes(searchTerm.toLowerCase()));
-    const matchesCategory = selectedCategory === "All" || episode.category === selectedCategory;
+    (episode.guestName && episode.guestName.toLowerCase().includes(searchTerm.toLowerCase()));
+
+    // Filter by tags (if present) or category
+    const matchesCategory = selectedCategory === "All" ||
+      (episode.tags && episode.tags.some(tag => tag.toLowerCase() === selectedCategory.toLowerCase())) ||
+      episode.category === selectedCategory;
+
     return matchesSearch && matchesCategory;
   });
 
@@ -212,6 +223,7 @@ export default function Page() {
             />
           </div>
           <div className="flex flex-wrap gap-2 justify-center">
+            {/* Hidden admin trigger */}
             {categories.map((category) => (
               <button
                 key={category}

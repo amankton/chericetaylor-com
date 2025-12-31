@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { Layout } from "../../components/Layout";
 import { GraduationCap, Briefcase, Mic, Users, Heart, BookOpen, Home } from "lucide-react";
-import chericeAboutPhoto from "../../assets/Cherice About.png";
 
 export default function Page() {
   return (
@@ -15,7 +14,7 @@ export default function Page() {
           <div className="grid md:grid-cols-[2fr_3fr] gap-12 items-center">
             <div className="relative aspect-square rounded-2xl overflow-hidden bg-stone-200 ring-1 ring-stone-200 shadow-xl">
               <Image
-                src={chericeAboutPhoto}
+                src="/images/cherice-profile-2024.jpg"
                 alt="Cherice Taylor"
                 fill
                 className="object-cover"
