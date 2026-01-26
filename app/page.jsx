@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Layout } from "../components/Layout";
 import { ArrowRight, Play, BookOpen, Mic, GraduationCap, Briefcase } from "lucide-react";
 import chericePhoto from "../assets/1.png";
+import NewsletterForm from "../components/NewsletterForm";
 
 export default function Page() {
   return (
@@ -60,18 +61,18 @@ export default function Page() {
           </div>
           <h2 className="text-3xl md:text-4xl font-serif text-stone-900 tracking-tight">Three decades of experience,<br />shared with you.</h2>
           <p className="text-stone-600 font-light leading-relaxed">
-            From the classroom to leadership, I&apos;ve seen education from every angle. Now, I&apos;m sharing the lessons that matter most for educators, parents, and lifelong learners.
+            From the classroom to leadership, I&apos;ve seen education from many different angles. Now, I&apos;m sharing the lessons that matter most for educators, parents, and lifelong learners.
           </p>
           <p className="text-stone-600 font-light leading-relaxed">
             <strong className="font-medium text-stone-900">&quot;If we all do better, then we all do better.&quot;</strong> This belief drives everything I do—from my podcast to my work as a career advisor and education consultant.
           </p>
           <div className="flex gap-4 pt-4">
             <div className="pl-4 border-l-2 border-stone-300">
-              <p className="text-3xl font-serif text-stone-900">36</p>
+              <p className="text-3xl font-serif text-stone-900">36+</p>
               <p className="text-xs text-stone-500 uppercase tracking-wide">Years in Education</p>
             </div>
             <div className="pl-4 border-l-2 border-stone-300">
-              <p className="text-3xl font-serif text-stone-900">100+</p>
+              <p className="text-3xl font-serif text-stone-900">25+</p>
               <p className="text-xs text-stone-500 uppercase tracking-wide">Podcast Episodes</p>
             </div>
             <div className="pl-4 border-l-2 border-stone-300">
@@ -195,19 +196,7 @@ export default function Page() {
           <p className="text-stone-300 font-light mb-10 leading-relaxed">
             Get weekly insights on education, career growth, and personal development delivered to your inbox.
           </p>
-          <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="flex-1 px-4 py-3 rounded-lg bg-stone-800 border border-stone-700 text-stone-50 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-500 focus:border-stone-500 transition-all"
-            />
-            <button
-              type="submit"
-              className="px-6 py-3 bg-stone-50 text-stone-900 font-medium rounded-lg hover:bg-white transition-colors shadow-lg"
-            >
-              Subscribe
-            </button>
-          </form>
+          <NewsletterForm />
           <p className="text-stone-400 text-xs mt-4">No spam, ever. Unsubscribe anytime.</p>
         </div>
       </section>

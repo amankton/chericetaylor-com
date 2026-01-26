@@ -12,9 +12,9 @@ export default function Page() {
       <header className="relative pt-32 pb-20 md:pt-40 md:pb-32 px-6 overflow-hidden bg-gradient-to-b from-stone-100 to-stone-50">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-[2fr_3fr] gap-12 items-center">
-            <div className="relative aspect-square rounded-2xl overflow-hidden bg-stone-200 ring-1 ring-stone-200 shadow-xl">
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-stone-200 ring-1 ring-stone-200 shadow-xl">
               <Image
-                src="/images/cherice-profile-2024.jpg"
+                src="/images/cherice-profile-new.jpg"
                 alt="Cherice Taylor"
                 fill
                 className="object-cover"
@@ -34,7 +34,7 @@ export default function Page() {
                 Educator • Podcast Host • Career Advisor • Mentor
               </p>
               <p className="text-stone-600 font-light leading-relaxed">
-                With 36 years in education and a passion for helping others grow, I&apos;m dedicated to sharing knowledge that makes a real difference in people&apos;s lives.
+                With 36+ years in education and a passion for helping others grow, I&apos;m dedicated to sharing knowledge that makes a real difference in people&apos;s lives.
               </p>
               <div className="pt-4">
                 <a href="/contact" className="inline-flex items-center justify-center gap-3 px-6 py-3 bg-stone-900 text-stone-50 rounded-xl shadow-lg hover:bg-stone-800 transition-colors">

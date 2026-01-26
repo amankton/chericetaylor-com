@@ -171,7 +171,7 @@ export default function Page() {
               <span>Spotify</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
-            <a href="https://youtube.com/@chericetaylor" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-stone-200 text-sm font-medium text-stone-700 hover:border-stone-300 hover:shadow-sm transition-all">
+            <a href="https://www.youtube.com/@timematterspodcast" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-stone-200 text-sm font-medium text-stone-700 hover:border-stone-300 hover:shadow-sm transition-all">
               <span>YouTube</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>

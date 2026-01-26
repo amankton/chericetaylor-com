@@ -89,7 +89,7 @@ export default function Page() {
               <MapPin className="w-6 h-6 text-stone-50" />
             </div>
             <h3 className="text-lg font-serif text-stone-900 mb-2">Location</h3>
-            <p className="text-stone-600 font-light text-sm mb-4 leading-relaxed">Based in Los Angeles, CA</p>
+            <p className="text-stone-600 font-light text-sm mb-4 leading-relaxed">Based in Stafford, VA</p>
             <p className="text-stone-900 font-medium text-sm">Virtual services available nationwide</p>
           </div>
         </div>
@@ -196,7 +196,7 @@ export default function Page() {
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="font-serif text-2xl text-stone-50 mb-4">Office Hours & Availability</h3>
           <p className="text-stone-300 font-light mb-6 leading-relaxed">
-            I&apos;m based in Los Angeles, CA (PST/PDT) and typically respond to inquiries within 24-48 hours during business days.
+            I&apos;m based in Stafford, VA (EST/EDT) and typically respond to inquiries within 24-48 hours during business days.
           </p>
           <p className="text-stone-400 text-sm">
             For urgent speaking inquiries, please mention &quot;URGENT&quot; in your subject line.

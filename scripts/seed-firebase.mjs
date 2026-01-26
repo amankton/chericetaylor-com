@@ -78,8 +78,8 @@ const podcastData = [
         "link": "https://www.youtube.com/watch?v=eC6sUa-zpL8"
     },
     {
-        "title": "Ernisha Hall - Entrepreneurship and Social Media (Part 2)",
-        "description": "Continuation of pearls of wisdom about entrepreneurship and social media for small businesses.",
+        "title": "Conversation with Racquel Oden – Navigation Success on Wall Street",
+        "description": "Racquel Oden, Head of National Sales at JP Morgan Chase & Co., joins as a Virtual Mentor to share tips on positioning yourself for success.",
         "link": "https://www.youtube.com/watch?v=g2l0gyoGNdk"
     },
     {

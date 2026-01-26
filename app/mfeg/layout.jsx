@@ -36,7 +36,7 @@ export default function MFEGLayout({ children }) {
               lg:block
             `}
                         >
-                            <div className="bg-white rounded-2xl shadow-sm border border-stone-100 p-6 sticky top-24">
+                            <div className="bg-white rounded-2xl shadow-sm border border-stone-100 p-6 sticky top-24 max-h-[calc(100vh-8rem)] flex flex-col">
                                 <div className="mb-6">
                                     <Link
                                         href="/mfeg"
@@ -48,7 +48,7 @@ export default function MFEGLayout({ children }) {
                                     <p className="text-xs text-stone-500 mt-2 ml-8 uppercase tracking-wider font-semibold">Table of Contents</p>
                                 </div>
 
-                                <nav className="space-y-1">
+                                <nav className="space-y-1 overflow-y-auto flex-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
                                     {chapters.map((chapter) => {
                                         const isActive = pathname === `/mfeg/${chapter.id}`;
                                         return (
