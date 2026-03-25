@@ -1,4 +1,5 @@
 import "./globals.css";
+import Providers from "./providers";
 
 export const metadata = {
   title: "Cherice Taylor - Educator, Podcast Host, Mentor",
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased">
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

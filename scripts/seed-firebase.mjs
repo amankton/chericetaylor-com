@@ -43,6 +43,26 @@ const db = getFirestore(app);
 // Data from chericetaylor.com/pearls-of-wisdom/
 const podcastData = [
     {
+        "title": "2026 Happy New Year",
+        "description": "Bringing back Time Matters Podcast to share tips and pearls of wisdom to help K-12 students and families navigate and help launch the high school and college seniors successfully.",
+        "link": "https://www.youtube.com/watch?v=aBPNSXRpjNI"
+    },
+    {
+        "title": "Time Matters Podcast Mentorship",
+        "description": "This is a call to action for our community to mentor a younger person or young professional.",
+        "link": "https://www.youtube.com/watch?v=0cR-p4HFJi0"
+    },
+    {
+        "title": "Military Families & Resilience",
+        "description": "Military families are resilient.",
+        "link": "https://www.youtube.com/watch?v=vZwdWpVi76M"
+    },
+    {
+        "title": "Adversity to Collaboration Creating Currency, and the power of LinkedIn",
+        "description": "Benefits of Networking and LinkedIn - Rob \"YB' Youngblood provides nuggets of wisdom for not only students, but young adults as well professionals who may have hit a roadblock.",
+        "link": "https://www.youtube.com/watch?v=BUDM1vXwu4o"
+    },
+    {
         "title": "What is the Common Application?",
         "description": "An overview of the Common Application process.",
         "link": "https://www.youtube.com/watch?v=Xt7Uzj6qXmo"
