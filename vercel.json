@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/:segments*/__next.:name.__PAGE__.txt",
+      "destination": "/:segments*/__next.:name/__PAGE__.txt"
+    }
+  ]
+}
