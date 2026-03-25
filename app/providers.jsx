@@ -1,23 +1,21 @@
 'use client'
 
-import React, { useEffect } from 'react'
-import { ReactLenis } from 'lenis/react'
+import { useEffect } from 'react'
+import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
 
 export default function Providers({ children }) {
-  React.useEffect(() => {
-    console.log("Lenis Providers mounted");
-  }, []);
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: 0.1,
+      smoothWheel: true,
+      autoRaf: true,
+    })
 
-  return (
-    <ReactLenis
-      root
-      options={{
-        lerp: 0.1,
-        smoothWheel: true,
-      }}
-    >
-      {children}
-    </ReactLenis>
-  )
+    return () => {
+      lenis.destroy()
+    }
+  }, [])
+
+  return children
 }
